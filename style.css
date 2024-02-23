@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.9;
+  background-color: #282c35;
+}
+
+/* Header styles */
+.title {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  max-width: 100%; /* Make the logo responsive */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Main content styles */
+main {
+  max-width: 1200px; /* Set a maximum width for the main content */
+  margin: 0 auto; /* Center the main content */
+  padding: 20px;
+}
+
+.why {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(147, 14, 14);
+  color: rgb(241, 236, 231);
+  font-family: "Bangers";
+  letter-spacing: 0.5px;
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article article {
+  flex: 0 0 calc(50% - 20px); /* Two articles per row with spacing */
+  margin-bottom: 20px;
+}
+
+/* Image scroller styles */
+/* Styles for the image scroller container */
+.scroller-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 40px 0;
+}
+
+/* Styles for the image list */
+.image-list {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* Styles for each image */
+.image-list li {
+  flex: 0 0 250px; /* Fixed width for each image */
+  height: 350px; /* Fixed height for each image */
+  margin-right: 30px; /* Adjust the spacing between images */
+  scroll-snap-align: start;
+}
+
+.image-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images maintain their aspect ratio */
+  border-radius: 12px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow */
+}
+
+/* Prices section styles */
+.prices {
+  text-align: center;
+  margin: 20px 0;
+  background-color: black;
+  color: white;
+  border: 5px solid;
+  padding: 20px;
+  width: 100;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+.prices h1 {
+  font-family: "bangers";
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: #e7e4e4;
+}
+
+.prices h2 {
+  font-family: "Cabin";
+  font-size: 27px;
+  margin-bottom: -10px;
+  margin-top: -30px;
+  text-transform: uppercase;
+}
+
+.prices h3 {
+  font-family: "Cabin";
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  font-size: "cabin";
+  font-weight: bolder;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  margin: auto;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .image-list li {
+    flex: 0 0 150px; /* Adjust the width for smaller screens */
+    height: 100px; /* Adjust the height for smaller screens */
+  }
+}
+
+.one {
+  background-color: rgb(200, 200, 200);
+  border-top-left-radius: 80px 50px;
+  -moz-border-radius-top-left: 80px 50px;
+  -webkit-border-radius-top-left: 80px 50px;
+  text-align: center;
+  font-family: "cabin";
+}
+
+.one h2 {
+  text-align: center;
+  font-family: "Bangers";
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.two {
+  background-color: rgb(200, 200, 200);
+  border-top-right-radius: 80px 50px;
+  -moz-border-radius-top-right: 80px 50px;
+  -webkit-border-radius-top-right: 80px 50px;
+  text-align: center;
+  font-family: "cabin";
+}
+
+.two h2 {
+  text-align: center;
+  font-family: "Bangers";
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.three {
+  background-color: rgb(200, 200, 200);
+  border-bottom-left-radius: 80px 50px;
+  -moz-border-radius-bottom-left: 80px 50px;
+  -webkit-border-radius-bottom-left: 80px 50px;
+  text-align: center;
+  font-family: "cabin";
+}
+
+.three h2 {
+  text-align: center;
+  font-family: "Bangers";
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.four {
+  background-color: rgb(200, 200, 200);
+  border-bottom-right-radius: 80px 50px;
+  -moz-border-radius-bottom-right: 80px 50px;
+  -webkit-border-radius-bottom-right: 80px 50px;
+  text-align: center;
+  font-family: "cabin";
+}
+.four h2 {
+  text-align: center;
+  font-family: "Bangers";
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.book_title {
+  text-align: center;
+  padding: 40px;
+  font-size: 80px;
+  font-family: "Bangers";
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+form {
+  text-align: center;
+  font-family: "cabin";
+  font-size: 20px;
+  color: #fff;
+  padding: 20px;
+}
+
+/* thank you page */
+.thankyou {
+  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff 0%, #e1e8ed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1e8ed',GradientType=0 );
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper-1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-2 {
+  padding: 30px;
+  text-align: center;
+}
+h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 4em;
+  letter-spacing: 3px;
+  color: #5892ff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.wrapper-2 p {
+  margin: 0;
+  font-size: 1.3em;
+  color: #aaa;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
+}
+.go-home {
+  color: #fff;
+  background: #5892ff;
+  border: none;
+  padding: 10px 50px;
+  margin: 30px 0;
+  border-radius: 30px;
+  text-transform: capitalize;
+  box-shadow: 0 10px 16px 1px rgba(174, 199, 251, 1);
+}
+.footer-like {
+  margin-top: auto;
+  background: #d7e6fe;
+  padding: 6px;
+  text-align: center;
+}
+.footer-like p {
+  margin: 0;
+  padding: 4px;
+  color: #5892ff;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 1px;
+}
+.footer-like p a {
+  text-decoration: none;
+  color: #5892ff;
+  font-weight: 600;
+}
+
+@media (min-width: 360px) {
+  h1 {
+    font-size: 4.5em;
+  }
+  .go-home {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .wrapper-1 {
+    height: initial;
+    max-width: 620px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 8px 40px 8px rgba(88, 146, 255, 0.2);
+  }
+}
+
+input[type="submit"] {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 15px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.call {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 15px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Hover effect for the submit button */
+.call:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.home {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 15px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+}
+.home:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.submit {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  padding: 4px 10px; /* Padding inside the button */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo a {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.logo img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
